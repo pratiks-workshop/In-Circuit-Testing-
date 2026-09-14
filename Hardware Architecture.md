@@ -1,8 +1,9 @@
 # 1. System Hardware Architecture
 
-The TR8100LV utilizes a modular backplane architecture to interface measurement modules, power rails, and fixture pin cards.
+The TR8100LV utilizes a modular backplane architecture to interface measurement
+modules, power rails, and fixture pin cards.
 
-
+```text
 +-----------------------------------------------------------------------+
 |                         SYSTEM CONTROLLER (PC)                        |
 +-----------------------------------------------------------------------+
@@ -25,9 +26,14 @@ The TR8100LV utilizes a modular backplane architecture to interface measurement 
 +-----------------------------------------------------------------------+
 |                  BED-OF-NAILS FIXTURE / DUT INTERFACE                 |
 +-----------------------------------------------------------------------+
+```
+
+The controller communicates with the System Management Board (SMB) over the
+system interface bus. The SMB then distributes control and measurement paths
+to the ATM, SWB, and DUT Power boards, which in turn interface to the DUT
+through the bed-of-nails fixture.
 
 ---
-
 # 2. Core Card Specifications
 
 ### 2.1 System Management Board (SMB)
