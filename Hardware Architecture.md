@@ -1,5 +1,8 @@
 # 1. System Hardware Architecture
+
 The TR8100LV utilizes a modular backplane architecture to interface measurement modules, power rails, and fixture pin cards.
+
+
 +-----------------------------------------------------------------------+
 |                         SYSTEM CONTROLLER (PC)                        |
 +-----------------------------------------------------------------------+
@@ -23,8 +26,19 @@ The TR8100LV utilizes a modular backplane architecture to interface measurement 
 |                  BED-OF-NAILS FIXTURE / DUT INTERFACE                 |
 +-----------------------------------------------------------------------+
 
+---
+
 # 2. Core Card Specifications
-2.1 System Management Board (SMB)The SMB functions as the primary control node for the chassis, handling power sequence execution, safety interlocks, environmental monitoring, and fixture control.  Main Functions:Monitors internal rail voltages, ambient/chassis temperature, and cooling fan speeds.  Executes system-level power-on/off sequences.  Controls fixture state flags (press down/up, lock/unlock status).  Manages General Purpose I/O (GPIO) lines and user control relays.  Reads fixture ID codes for automated fixture verification.
+
+### 2.1 System Management Board (SMB)
+The SMB functions as the primary control node for the chassis, handling power sequence execution, safety interlocks, environmental monitoring, and fixture control.
+
+**Main Functions:**
+* Monitors internal rail voltages, ambient/chassis temperature, and cooling fan speeds.
+* Executes system-level power-on/off sequences.
+* Controls fixture state flags (press down/up, lock/unlock status).
+* Manages General Purpose I/O (GPIO) lines and user control relays.
+* Reads fixture ID codes for automated fixture verification.
 
 ## 2.2 Analog Test Module (ATM) Board
 The ATM board executes all unpowered analog parametric measurements and guarded component testing.  Main Functions:Performs 2-wire, 3-wire, 4-wire, and 6-wire guarded analog component measurements.  Generates precision AC/DC stimulus voltages and currents.  Evaluates component integrity without applying full power to the PCBA.  Detailed Measurement Ranges:Resistance: 0.1 $\Omega$ to 40 M$\Omega$.  Capacitance: 1 pF to 40 mF.  Inductance: 1 $\mu$H to 60 H.  Zener Diodes: Test range up to 43V.  Active Components: Transistors ($h_{FE}$, $V_{CE}$), MOSFETs/JFETs ($I_{DS}$), SCRs, and TRIACs. 
