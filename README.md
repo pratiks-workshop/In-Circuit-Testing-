@@ -1,23 +1,48 @@
-# In-Circuit Testing (ICT)
-A comprehensive, production-oriented reference hub for **In-Circuit Testing (ICT)** in SMT manufacturing, PCBA defect analysis, system hardware architecture, and automated test fixtures[cite: 1].
+# 📄 Key Documentation Modules
+
+## 1. ICT Fundamentals
+
+| Topic | Contents |
+| :---- | :------- |
+| **Testing Methodology** | Principles of component-level isolation and guarding techniques. |
+| **Defect Coverage** | Unpowered checks (shorts/opens, *R*/*L*/*C*, diodes) vs. powered checks (voltage, vectorless, OBP/JTAG). |
+| **Process Comparison** | Comparative analysis across ICT, Flying Probe Testing (FPT), and Functional Testing (FCT). |
+
+## 2. TRI8000 Fixture Specifications
+
+| Topic | Contents |
+| :---- | :------- |
+| **Mechanical Dimensions** | Mechanical constraints, probe stroke clearances, and frame tolerances. |
+| **Interface Pinout Tables** | • Standard Power Interfaces (CN33 / CN34)<br/>• System Management Board (SMB) & Onboard Relay Contacts<br/>• Switching Boards (SWB #1–28) mapping |
+| **High-Speed & OBP Wiring** | Cabling guidelines (coaxial vs. twisted pair) for OBP, JTAG, and counter-buffer channels. |
+| **Safety & Assembly** | ESD bonding, System Auxiliary Ground (SAG) wiring, and step-by-step verification protocols. |
 
 ---
 
-## 📌 Repository Overview
+## 🛠️ Usage Guidelines
 
-This repository acts as an end-to-end knowledge repository for PCB assembly testing[cite: 1]. It covers everything from fundamental electronics testing concepts (Basic level) to deep hardware architecture, fixture routing, boundary scan, and custom monitoring projects (Pro level)[cite: 1].
+| Role | Guideline |
+| :--- | :-------- |
+| **PCB Layout Designers** | Refer to the test point routing and guarding notes in [`ICT Fundamentals.md`](docs/ICT%20Fundamentals.md) to ensure optimal testability (DFT) during circuit design. |
+| **Fixture Vendors** | Follow the exact mechanical parameters, power distribution gauge standards, and connector pinouts defined in [`TRI8000/Fixture Specification.md`](docs/TRI8000/Fixture%20Specification.md). |
+| **Test Engineers** | Use the hardware architecture references to quickly diagnose system faults, configure jumper options, and structure test routines. |
 
 ---
 
-## 🗂️ Documentation & Module Index
+## 🤝 Contributing
 
-### 🟢 Fundamentals
-* **[ICT Overview & Fundamentals](./README.md#1-ict-fundamentals)** — Purpose of In-Circuit Testing in high-volume PCBA lines, target defect coverage (opens, shorts, wrong component values, reverse polarity)[cite: 1].
-* **Parametric Testing Basics** — Component-level measurement fundamentals for Passive ($R, L, C$) and Active components (Diodes, Transistors, Zeners)
+Contributions are welcome! If you have additional fixture guidelines, troubleshooting
+steps, or hardware pinout corrections, feel free to open a **Pull Request** or
+create an **Issue**.
 
-### 🟡 Hardware & System Cards
-* **[TRI8000 Hardware Architecture](./TRI8000%20Hardware%20Architecture.md)** — Complete breakdown of the **TRI TR8100LV / TR8001** system cards, including
-  * **SMB** (System Management Board)
-  * **ATM** (Analog Test Module Board)
-  * **SWB** (Switching Board & Guarding)[cite: 1]
-  * **DUT Power Boards** & High-Power/Precision Rails (APPS)[cite: 1]
+---
+
+```bibtex
+@misc{In-Circuit-Testing,
+  author = {Pratik},
+  title = {In-Circuit Testing (ICT) Technical Knowledge Hub},
+  year = {2026},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{[https://github.com/pratiks-workshop/In-Circuit-Testing-](https://github.com/pratiks-workshop/In-Circuit-Testing-)}}
+}
