@@ -11,13 +11,13 @@ This repository acts as an end-to-end knowledge repository for PCB assembly test
 
 ## 🗂️ Documentation & Module Index
 
-### 🟢 Basic Level (Fundamentals)
+### 🟢 Fundamentals
 * **[ICT Overview & Fundamentals](./README.md#1-ict-fundamentals)** — Purpose of In-Circuit Testing in high-volume PCBA lines, target defect coverage (opens, shorts, wrong component values, reverse polarity)[cite: 1].
-* **Parametric Testing Basics** — Component-level measurement fundamentals for Passive ($R, L, C$) and Active components (Diodes, Transistors, Zeners)[cite: 1].
+* **Parametric Testing Basics** — Component-level measurement fundamentals for Passive ($R, L, C$) and Active components (Diodes, Transistors, Zeners)
 
-### 🟡 Intermediate Level (Hardware & System Cards)
-* **[TRI8000 Hardware Architecture](./TRI8000%20Hardware%20Architecture.md)** — Complete breakdown of the **TRI TR8100LV / TR8001** system cards, including[cite: 1]:
-  * **SMB** (System Management Board)[cite: 1]
-  * **ATM** (Analog Test Module Board)[cite: 1]
+### 🟡 Hardware & System Cards
+* **[TRI8000 Hardware Architecture](./TRI8000%20Hardware%20Architecture.md)** — Complete breakdown of the **TRI TR8100LV / TR8001** system cards, including
+  * **SMB** (System Management Board)
+  * **ATM** (Analog Test Module Board)
   * **SWB** (Switching Board & Guarding)[cite: 1]
   * **DUT Power Boards** & High-Power/Precision Rails (APPS)[cite: 1]
