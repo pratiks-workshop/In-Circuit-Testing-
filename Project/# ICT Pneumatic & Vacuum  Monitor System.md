@@ -21,7 +21,7 @@ No PLC or microcontroller is required, simplifying deployment and avoiding softw
                            [ ICT Start Enable Signal ]             [ Red Light / Buzzer ]
                             (Passes ONLY when OK)                   (Failsafe Alert)
 ```
-
+![image](https://github.com/pratiks-workshop/In-Circuit-Testing-/blob/main/Project/TRIAirVacuum%20Monitor.png?raw=true "Optional Title")
 ### 3.3 Operational Specifications
 
 | Parameter              | Sensor       | Window Range                                              | Signal Output Logic              |
