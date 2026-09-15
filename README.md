@@ -39,10 +39,10 @@ create an **Issue**.
 
 ```bibtex
 @misc{In-Circuit-Testing,
-  author = {Pratik},
-  title = {In-Circuit Testing (ICT) Technical Knowledge Hub},
-  year = {2026},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{[https://github.com/pratiks-workshop/In-Circuit-Testing-](https://github.com/pratiks-workshop/In-Circuit-Testing-)}}
+  author       = {Pratik},
+  title        = {In-Circuit Testing (ICT) Technical Knowledge Hub},
+  year         = {2026},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/pratiks-workshop/In-Circuit-Testing-}}
 }
