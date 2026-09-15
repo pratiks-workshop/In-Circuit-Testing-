@@ -17,15 +17,6 @@
 | **High-Speed & OBP Wiring** | Cabling guidelines (coaxial vs. twisted pair) for OBP, JTAG, and counter-buffer channels. |
 | **Safety & Assembly** | ESD bonding, System Auxiliary Ground (SAG) wiring, and step-by-step verification protocols. |
 
----
-
-## 🛠️ Usage Guidelines
-
-| Role | Guideline |
-| :--- | :-------- |
-| **PCB Layout Designers** | Refer to the test point routing and guarding notes in [`ICT Fundamentals.md`](docs/ICT%20Fundamentals.md) to ensure optimal testability (DFT) during circuit design. |
-| **Fixture Vendors** | Follow the exact mechanical parameters, power distribution gauge standards, and connector pinouts defined in [`TRI8000/Fixture Specification.md`](docs/TRI8000/Fixture%20Specification.md). |
-| **Test Engineers** | Use the hardware architecture references to quickly diagnose system faults, configure jumper options, and structure test routines. |
 
 ---
 
